@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://localhost/" />
-<title>test-miniblog</title>
+<link rel="selenium.base" href="http://miniblog/" />
+<title>logout</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">test-miniblog</td></tr>
+<tr><td rowspan="1" colspan="3">logout</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -17,33 +17,33 @@
 	<td></td>
 </tr>
 <tr>
+	<td>assertTextPresent</td>
+	<td>ホーム</td>
+	<td></td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
-	<td>link=新規ユーザ登録</td>
+	<td>link=アカウント</td>
 	<td></td>
 </tr>
 <tr>
-	<td>assertLocation</td>
-	<td>http://localhost/account/signup</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=user_name</td>
+	<td>assertTextPresent</td>
 	<td>testuser</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=password</td>
-	<td>testpass1</td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>css=input[type=&quot;submit&quot;]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=ホーム</td>
+	<td>link=ログアウト</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>ホーム</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>ログイン</td>
 	<td></td>
 </tr>
 </tbody></table>

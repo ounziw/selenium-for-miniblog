@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://localhost/" />
-<title>password fail</title>
+<link rel="selenium.base" href="http://miniblog/" />
+<title>login</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">password fail</td></tr>
+<tr><td rowspan="1" colspan="3">login</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -17,8 +17,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=ログイン</td>
+	<td>assertTextNotPresent</td>
+	<td>ホーム</td>
 	<td></td>
 </tr>
 <tr>
@@ -29,7 +29,7 @@
 <tr>
 	<td>type</td>
 	<td>name=password</td>
-	<td>pass123</td>
+	<td>testpass1</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
@@ -38,12 +38,17 @@
 </tr>
 <tr>
 	<td>assertLocation</td>
-	<td>http://localhost/account/authenticate</td>
+	<td>http://miniblog/</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertTextPresent</td>
-	<td>ユーザIDかパスワードが不正です</td>
+	<td>ホーム</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>パスワード</td>
 	<td></td>
 </tr>
 

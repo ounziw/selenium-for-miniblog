@@ -8,13 +8,8 @@
 <body>
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
-<tr><td><a href="signup">signup</a></td></tr>
-<tr><td><a href="logout">logout</a></td></tr>
-<tr><td><a href="already-signup">already signuped</a></td></tr>
-<tr><td><a href="password-fail">password fail</a></td></tr>
-<tr><td><a href="nouser">nouser</a></td></tr>
-<tr><td><a href="login">login</a></td></tr>
-<tr><td><a href="newpost">newpost</a></td></tr>
+<tr><td><a href="user2login">user2login</a></td></tr>
+<tr><td><a href="follow-testuser">follow-testuser</a></td></tr>
 </tbody></table>
 </body>
 </html>

@@ -3,27 +3,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://localhost/" />
-<title>logout</title>
+<link rel="selenium.base" href="http://miniblog/" />
+<title>follow-testuser</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">logout</td></tr>
+<tr><td rowspan="1" colspan="3">follow-testuser</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextPresent</td>
-	<td>ホーム</td>
+	<td>http://miniblog/user/testuser</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=アカウント</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
 	<td></td>
 </tr>
 <tr>
@@ -33,17 +28,22 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=ログアウト</td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTextNotPresent</td>
-	<td>ホーム</td>
+	<td>link=ホーム</td>
 	<td></td>
 </tr>
 <tr>
 	<td>assertTextPresent</td>
-	<td>ログイン</td>
+	<td>testuser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://miniblog/user/testuser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>フォローしています</td>
 	<td></td>
 </tr>
 
